@@ -31,10 +31,10 @@ I may face some issues with the search bar and getting it to display the data. I
 <img src="https://user-images.githubusercontent.com/49919405/72102083-657edf80-32e3-11ea-86d9-0a05fc5ad354.jpg" height='200' width='200'>
 
 
-#### MVP EXAMPLE
+#### MVP
 Home page with search bar to search through the api to find a brewery.  Once you hit the search button it will display all the results.  The results will include the name of the brewery, address, website link, and phone number.
 
-#### PostMVP EXAMPLE
+#### PostMVP
 
 - Add search for specific criteria 
 - Save favorite breweries 
@@ -99,7 +99,7 @@ handleOnInputChange = (e) => {
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
+#### 
 **ERROR**: webpackHotDevClient.js:120 ./src/components/search/searchLocation.js
   Line 49:82:  Using target="_blank" without rel="noopener noreferrer" is a security risk: see https://mathiasbynens.github.io/rel-noopener  react/jsx-no-target-blank
 
