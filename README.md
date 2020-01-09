@@ -3,21 +3,21 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+App that uses a brewery api to allow a user to search for local breweries in their area.  It will have a homepage with a header that is displayed on all of the pages.  It will have a main section that will allow the user to search by name or location.  Once the user makes a choice it will display the search bar.  The user then can type in the name/city and the api will display all the breweries that fit the search criteria. 
 
-App that uses a brewery api to allow a user to search for local breweries in their area.  It will have a homepage with a header that is displayed on all of the pages.  It will also have a main section that will render the search bar first and once you search for something it will redner the serach results below search bar.  I may face some issues with the search bar and getting it to work for the crietria I want it to look for and display. I will reference other labs and homework to help me figure out how to get the search bar to work.  I may have some issues with the CSS because I haven't been focusing as much on it with the last several assignments.  I will review older work i have done as a referene on how to work with the CSS.  I will also see if I can google if ther are any specific ways i should be working with CSS and react. I may run into some problems with displaying multiple breweries at once vs just one at a time depending on what a user searches.
+I may face some issues with the search bar and getting it to display the data. I will reference other labs and homework to help me figure out how to get the search bar to work.  I may have some issues with the CSS because I haven't been focusing as much on it with the last several assignments.  I will review older work i have done as a reference on how to work with the CSS.  I will also see if I can google if there are any specific ways i should be working with CSS and react. I may run into some problems with displaying multiple breweries at once vs just one at a time depending on what a user searches.
 
 
 ## Project Links
 
-- [repo]()
-- [deployment]()
+- [repo](https://github.com/hrocco25/brewery)
+- [deployment](https://heatherbreweryapp2.herokuapp.com/)
 - [API](https://www.openbrewerydb.org/documentation/01-listbreweries)
 
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+// i need to upload new pictures
 
 <img src="https://user-images.githubusercontent.com/49919405/71772381-6f7d9880-2f07-11ea-9d5f-458e0a8031ae.jpg" height='200' width='200'>
 
@@ -25,13 +25,14 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 
 #### MVP EXAMPLE
-Home page with search bar to search through the api to find a brewery.  Once you hit the search button it will display all the results.  The results will include the name of the brewery, address, type of brewery, website link, and phone number.
+Home page with search bar to search through the api to find a brewery.  Once you hit the search button it will display all the results.  The results will include the name of the brewery, address, website link, and phone number.
 
 #### PostMVP EXAMPLE
 
 - Add search for specific criteria 
-- save favorite breweries 
-- 
+- Save favorite breweries 
+- Search for both city and state at the same time to narrow search results
+- Add pagination 
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -40,40 +41,56 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav & top image | 
-| Main | This will render the main section | 
+| App | It has React Router and links back to home page| 
+| Header | This will render the header include the title of app, icon, and main img | 
+| Main | This includes the main section with links to the location and name search| 
 | Search | This will render the search bar | 
-| Result | This will render the resutls | 
+| Name | This updates text for Name and SearchName | 
+| SearchName | It fetches the api data depending on what is typed into the search  | 
+| Location | This updates text for search and SearchLocation | 
+| SearchLocation | It fetches the api data depending on what is typed into the search | 
 | Footer | This will render the header include the footer info | 
 
 ## Time Frames
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Planning | H | 3hrs| 1hrs | 3.5hrs |
-| Working with API | H | 2 hrs| 2hrs | hrs |
-| CSS and formating | H | 5hrs| 4hrs | hrs |
-| App | H | 1 hrs| hrs | hrs |
-| Header | H | 3 hrs| 1hrs | hrs |
-| Main | H | 4 hrs| 1hrs | hrs |
-| Search | H | 6 hrs| 6hrs | hrs |
-| Footer | H | 1 hrs| .2hrs | hrs |
-| Total | H | 31hrs| hrs | hrs |
+| Planning | H | 3hrs| 2hrs | 2hrs |
+| Working with API | H | 2 hrs| 2hrs | 2hrs |
+| CSS and formating | H | 5hrs| 4hrs | 5hrs |
+| App | H | 1 hrs| .5hrs | .5hrs |
+| Header | H | 3 hrs| 1hrs | 1hrs |
+| Main | H | 4 hrs| 1hrs | 1hrs |
+| Search | H | 6 hrs| 7hrs | 7hrs |
+| Footer | H | 1 hrs| .2hrs | .2hrs |
+| Total | H | 31hrs| 18.7hrs | 18.7hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+	handleOnInputChange = (e) => {
+        const query = e.target.value
+        if ( ! query ){
+            this.setState( { query, results: {}} )
+        } else{
+          this.setState ( { query }, () =>{
+            this.fetchSearchResults( query )
+        } ) 
+        }
+    }// this function is called when a user inputs text into the search bar
+	
+```
+
+```
+	<a className='name' href= { result.website_url } target="_blank" rel="noopener noreferrer">{result.name}</a>
+	//I was able to get the name of the brewery to be a link 
+	
 ```
 
 ## Issues and Resolutions
