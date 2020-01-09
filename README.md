@@ -10,8 +10,8 @@ App that uses a brewery api to allow a user to search for local breweries in the
 
 ## Project Links
 
-- [repo](https://github.com/hrocco25/brewery)
-- [deployment](https://heatherbreweryapp2.herokuapp.com/)
+- [repo]()
+- [deployment]()
 - [API](https://www.openbrewerydb.org/documentation/01-listbreweries)
 
 
