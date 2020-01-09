@@ -12,7 +12,7 @@ function App(){
         <div className='app'>
           <Link to ='/' style={{textDecoration: 'none', color: 'black'}}>
             <Header /> 
-          </Link>
+          </Link> 
             <Route exact path='/' render= {props=> <Main {...props}/>}/>
             <Route path='/Location' render={props=> <Location {...props} />}/>
             <Route path='/Name' render={props=> <Name {...props} />}/>
