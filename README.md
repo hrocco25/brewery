@@ -54,7 +54,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 ## Time Frames
 
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Planning | H | 3hrs| 2hrs | 2hrs |
 | Working with API | H | 2 hrs| 2hrs | 2hrs |
@@ -66,30 +66,26 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Footer | H | 1 hrs| .2hrs | .2hrs |
 | Total | H | 31hrs| 18.7hrs | 18.7hrs |
 
-## Additional Libraries
-
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
-
 ```
-	handleOnInputChange = (e) => {
-        const query = e.target.value
-        if ( ! query ){
-            this.setState( { query, results: {}} )
-        } else{
-          this.setState ( { query }, () =>{
-            this.fetchSearchResults( query )
-        } ) 
-        }
-    }// this function is called when a user inputs text into the search bar
+handleOnInputChange = (e) => {
+	const query = e.target.value
+	if ( ! query ){
+		this.setState( { query, results: {}} )
+	} else{
+		this.setState ( { query }, () =>{
+		this.fetchSearchResults( query )
+	} ) 
+	}
+}// this function is called when a user inputs text into the search bar
 	
 ```
 
 ```
-	<a className='name' href= { result.website_url } target="_blank" rel="noopener noreferrer">{result.name}</a>
-	//I was able to get the name of the brewery to be a link 
+<a className='name' href= { result.website_url } target="_blank" rel="noopener noreferrer">{result.name}</a>
+//I was able to get the name of the brewery to be a link 
 	
 ```
 
@@ -97,6 +93,8 @@ Use this section to include a brief code snippet of functionality that you are p
  Use this section to list of all major issues encountered and their resolution.
 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: webpackHotDevClient.js:120 ./src/components/search/searchLocation.js
+  Line 49:82:  Using target="_blank" without rel="noopener noreferrer" is a security risk: see https://mathiasbynens.github.io/rel-noopener  react/jsx-no-target-blank
+
+**RESOLUTION**: Needed to add '''rel="noopener noreferrer"''' to the <a> tag
 
