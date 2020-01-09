@@ -1,68 +1,85 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+App that uses a brewery api to allow a user to search for local breweries in their area.  It will have a homepage with a header that is displayed on all of the pages.  It will also have a main section that will render the search bar first and once you search for something it will redner the serach results below search bar.  I may face some issues with the search bar and getting it to work for the crietria I want it to look for and display. I will reference other labs and homework to help me figure out how to get the search bar to work.  I may have some issues with the CSS because I haven't been focusing as much on it with the last several assignments.  I will review older work i have done as a referene on how to work with the CSS.  I will also see if I can google if ther are any specific ways i should be working with CSS and react. I may run into some problems with displaying multiple breweries at once vs just one at a time depending on what a user searches.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+## Project Links
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [repo]()
+- [deployment]()
+- [API](https://www.openbrewerydb.org/documentation/01-listbreweries)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Wireframes
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://user-images.githubusercontent.com/49919405/71772381-6f7d9880-2f07-11ea-9d5f-458e0a8031ae.jpg" height='200' width='200'>
 
-### `npm run eject`
+- [react architecture]()
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### MVP EXAMPLE
+Home page with search bar to search through the api to find a brewery.  Once you hit the search button it will display all the results.  The results will include the name of the brewery, address, type of brewery, website link, and phone number.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### PostMVP EXAMPLE
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Add search for specific criteria 
+- save favorite breweries 
+- 
 
-## Learn More
+## Components
+##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Component | Description | 
+| --- | :---: |  
+| App | This will make the initial data pull and include React Router| 
+| Header | This will render the header include the nav & top image | 
+| Main | This will render the main section | 
+| Search | This will render the search bar | 
+| Result | This will render the resutls | 
+| Footer | This will render the header include the footer info | 
 
-### Code Splitting
+## Time Frames
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-### Analyzing the Bundle Size
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Planning | H | 3hrs| 1hrs | 3.5hrs |
+| Working with API | H | 2 hrs| 2hrs | hrs |
+| CSS and formating | H | 5hrs| 4hrs | hrs |
+| App | H | 1 hrs| hrs | hrs |
+| Header | H | 3 hrs| 1hrs | hrs |
+| Main | H | 4 hrs| 1hrs | hrs |
+| Search | H | 6 hrs| 6hrs | hrs |
+| Footer | H | 1 hrs| .2hrs | hrs |
+| Total | H | 31hrs| hrs | hrs |
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Additional Libraries
+ Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
 
-### Making a Progressive Web App
+## Code Snippet
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
-### Advanced Configuration
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Issues and Resolutions
+ Use this section to list of all major issues encountered and their resolution.
 
-### Deployment
+#### SAMPLE.....
+**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
+**RESOLUTION**: Missing comma after first object in sources {} object
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
