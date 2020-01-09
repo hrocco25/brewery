@@ -17,11 +17,18 @@ I may face some issues with the search bar and getting it to display the data. I
 
 ## Wireframes
 
-// i need to upload new pictures
-
 <img src="https://user-images.githubusercontent.com/49919405/71772381-6f7d9880-2f07-11ea-9d5f-458e0a8031ae.jpg" height='200' width='200'>
 
-- [react architecture]()
+
+<img src="https://user-images.githubusercontent.com/49919405/72102084-66b00c80-32e3-11ea-9dd5-bd0e6cd5ca89.jpg" height='200' width='200'>
+
+<img src="https://user-images.githubusercontent.com/49919405/72102088-6879d000-32e3-11ea-9d52-0c4aa866b4f3.jpg" height='200' width='200'>
+
+<img src="https://user-images.githubusercontent.com/49919405/72102090-6a439380-32e3-11ea-8404-47773fdeb2b2.jpg" height='200' width='200'>
+
+- react architecture
+
+<img src="https://user-images.githubusercontent.com/49919405/72102083-657edf80-32e3-11ea-86d9-0a05fc5ad354.jpg" height='200' width='200'>
 
 
 #### MVP EXAMPLE
