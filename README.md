@@ -13,6 +13,7 @@ I may face some issues with the search bar and getting it to display the data. I
 - [repo](https://github.com/hrocco25/brewery)
 - [deployment](https://heatherbreweryapp2.herokuapp.com/)
 - [API](https://www.openbrewerydb.org/documentation/01-listbreweries)
+- [Demo video](https://www.youtube.com/watch?v=kUWiJRRTsfE&feature=youtu.be)
 
 
 ## Wireframes
