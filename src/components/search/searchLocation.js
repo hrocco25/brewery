@@ -9,13 +9,12 @@ class SearchLocation extends Component {
     constructor( props ){
         super( props )
         this.state= {
-            // query2: '',
             query: '',
             results: {},
         }
     }
 
-    fetchSearchResults = ( query, query2 ) => {
+    fetchSearchResults = ( query ) => {
         const searchUrl= `https://api.openbrewerydb.org/breweries?by_city=${query}&&per_page=100`
         
         axios.get( searchUrl)
